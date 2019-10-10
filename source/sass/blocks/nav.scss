@@ -1,7 +1,7 @@
 .main-nav {
   display: flex;
 
-  width: 1411px;
+  max-width: 1428px;
   margin: 0 auto;
 
   color: #ffffff;
@@ -15,13 +15,21 @@
 }
 
 .main-nav__item:last-child {
-  margin: 0 0 0 121px;
+  margin: 0 0 0 71px;
 }
+
 
 .main-nav__link {
   line-height: 18px;
 
+  padding: 0 0 0 50px;
+
   color: #ffffff;
+
+  &--mail,
+  &--phone {
+    position: relative;
+  }
 
   &--mail::before {
     content: "";
@@ -29,8 +37,8 @@
     width: 19px;
     height: 14px;
 
-    left: 798px;
-    top: 30px;
+    left: 11px;
+    top: 3px;
 
     background-image: url("../img/mail-icon.svg");
     background-repeat: no-repeat;
@@ -42,11 +50,19 @@
     width: 18px;
     height: 18px;
 
-    left: 1021px;
-    top: 29px;
+    left: 17px;
+    top: 1px;
 
     background-image: url("../img/phone-icon.svg");
     background-repeat: no-repeat;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -58,12 +74,72 @@
   letter-spacing: 0.05em;
 
   width: 180px;
-  height: 45px;
-  margin: 15px 0 0 50px;
+  margin: 15px 17px 16px 50px;
 
   background-color: transparent;
   color: #ffffff;
 
   text-transform: uppercase;
   border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+    border-color: $blue-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+    border-color: $blue-color;
+  }
+}
+
+@media (max-width: 1023px) {
+  .main-nav__button {
+    display: none;
+  }
+
+  .main-nav__link span {
+    display: none;
+  }
+
+  .main-nav__item:last-child {
+    margin: 0 0 0 33px;
+  }
+
+  .main-nav__link {
+    &--mail::before {
+      left: 50px;
+      top: -1px;
+
+      width: 25px;
+      height: 19px;
+
+      background-image: url("../img/mail-tablet.svg");
+    }
+
+    &--phone::before {
+      left: 25px;
+      top: -4px;
+
+      width: 24px;
+      height: 24px;
+
+      background-image: url("../img/phone-tablet.svg");
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .main-nav__link {
+    &--mail::before {
+      left: 28px;
+      top: -3px;
+    }
+
+    &--phone::before {
+      left: -7px;
+      top: -6px;
+    }
+  }
 }
