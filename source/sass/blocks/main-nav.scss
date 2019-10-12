@@ -5,7 +5,7 @@
 .main-nav {
   display: flex;
 
-  max-width: 1428px;
+  max-width: 1411px;
   margin: 0 auto;
 
   color: #ffffff;
@@ -13,20 +13,19 @@
 
 .main-nav__list {
   display: flex;
-  list-style: none;
 
-  margin: 26px 0 0 0;
+  margin-right: 51px;
+
+  @include list-reset;
 }
 
 .main-nav__item:last-child {
-  margin: 0 0 0 71px;
+  margin: 0 0 0 121px;
 }
 
 
 .main-nav__link {
   line-height: 18px;
-
-  padding: 0 0 0 50px;
 
   color: #ffffff;
 
@@ -41,7 +40,7 @@
     width: 19px;
     height: 14px;
 
-    left: 11px;
+    left: -39px;
     top: 3px;
 
     background-image: url("../img/mail-icon.svg");
@@ -54,7 +53,7 @@
     width: 18px;
     height: 18px;
 
-    left: 17px;
+    left: -33px;
     top: 1px;
 
     background-image: url("../img/phone-icon.svg");
@@ -71,34 +70,14 @@
 }
 
 .main-nav__button {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: bold;
-  letter-spacing: 0.05em;
-
-  width: 180px;
-  margin: 15px 17px 16px 50px;
-
-  background-color: transparent;
-  color: #ffffff;
-
-  text-transform: uppercase;
-  border-radius: 5px;
-  cursor: pointer;
-
-  &:hover {
-    opacity: 0.7;
-    border-color: $light-blue;
-  }
-
-  &:active {
-    opacity: 0.3;
-    border-color: $light-blue;
-  }
+  margin-top: 5px;
 }
 
 @media (max-width: 1023px) {
+  .main-nav {
+    max-width: 720px;
+  }
+
   .main-nav__button {
     display: none;
   }
@@ -107,14 +86,10 @@
     display: none;
   }
 
-  .main-nav__item:last-child {
-    margin: 0 0 0 33px;
-  }
-
   .main-nav__link {
     &--mail::before {
-      left: 50px;
-      top: -1px;
+      left: 90px;
+      top: 1px;
 
       width: 25px;
       height: 19px;
@@ -123,8 +98,8 @@
     }
 
     &--phone::before {
-      left: 25px;
-      top: -4px;
+      left: 26px;
+      top: -2px;
 
       width: 24px;
       height: 24px;
@@ -135,15 +110,19 @@
 }
 
 @media (max-width: 767px) {
+  .main-nav {
+    max-width: 288px;
+  }
+
   .main-nav__link {
     &--mail::before {
-      left: 28px;
-      top: -3px;
+      left: 99px;
+      top: 9px;
     }
 
     &--phone::before {
-      left: -7px;
-      top: -6px;
+      left: 26px;
+      top: 6px;
     }
   }
 }
