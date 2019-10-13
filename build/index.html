@@ -141,21 +141,21 @@
           <div class="feedback__picture">
             <img class="feedback__image" src="../img/paper_airplane.svg" width="511" height="288" alt="бумажный самолетик">
           </div>
-          <div class="feedback__form">
+          <div class="feedback__form modal-form">
             <h2 class="visually-hidden">Форма обратной связи для посетителей сайта</h2>
-            <p class="feedback__title">Остались вопросы? Задайте их нам!</p>
+            <p class="feedback__title modal-form__title">Остались вопросы? Задайте их нам!</p>
             <p class="feedback__text">Мы проконсультируем Вас бесплатно</p>
             <form>
-              <p class="feedback__data">
+              <p class="feedback__data modal-form__data">
                 <input type="text" id="name-id" name="name" placeholder="Имя" required="">
                 <input type="text" id="phone-id" name="phone" placeholder="Телефон" required="">
               </p>
-              <p class="feedback__textarea">
+              <p class="feedback__textarea modal-form__textarea">
                 <textarea>Ваш вопрос</textarea>
               </p>
-              <div class="feedback__push">
-                <button class="feedback__button button" type="submit">Задать вопрос</button>
-                <p class="feedback__checkbox">
+              <div class="feedback__push modal-form__push">
+                <button class="feedback__button button modal-form__button" type="submit">Задать вопрос</button>
+                <p class="feedback__checkbox modal-form__checkbox">
                   <input class="visually-hidden" type="checkbox" id="agreement-id" name="agreement" checked="">
                   <label for="agreement-id">Я согласен на обработку персональных данных</label>
                 </p>
@@ -236,6 +236,27 @@
       <span>Developed by wow studio</span>
       </div>
     </footer>
+    <section class="modal-form modal-form--popup">
+      <h2 class="visually-hidden">Форма для заказа обратного звонка</h2>
+      <p class="modal-form__title">Закажите звонок</p>
+      <p class="modal-form__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+      <form>
+        <p class="modal-form__data">
+          <input type="text" id="name-id" name="name" placeholder="Имя" required="">
+          <input type="text" id="phone-id" name="phone" placeholder="Телефон" required="">
+        </p>
+        <p class="modal-form__textarea">
+          <textarea>Ваш вопрос</textarea>
+        </p>
+        <div class="modal-form__push">
+          <button class="modal-form__button button" type="submit">Отправить</button>
+          <p class="modal-form__checkbox">
+            <input class="visually-hidden" type="checkbox" id="agreement-id" name="agreement" checked="">
+            <label for="agreement-id">Я согласен на обработку персональных данных</label>
+          </p>
+        </div>
+      </form>
+    </section>
   </body>
 </html>
 
