@@ -1,6 +1,13 @@
 .feedback {
   background-color: $light-blue;
+  background-image: url("../img/triangles@1x.png");
+  background-repeat: no-repeat;
+  background-position: -854px -178px;
   color: #ffffff;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/triangles@2x.png");
+  }
 }
 
 .feedback__container {
@@ -85,6 +92,10 @@
 }
 
 @media (max-width: 1023px) {
+  .feedback {
+    background-image: none;
+  }
+
   .feedback__container {
     max-width: 591px;
     padding: 77px 0 81px;
@@ -142,7 +153,7 @@
   }
 }
 
-@media (max-width: 737px) {
+@media (max-width: 767px) {
   .feedback__container {
     max-width: 290px;
     padding: 27px 0 43px;

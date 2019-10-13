@@ -64,7 +64,7 @@
 
   .info__description {
     width: 532px;
-    height: 201px;
+    // height: 201px;
     margin: -2px 0 0 -38px;
   }
 
@@ -94,11 +94,11 @@
   }
 }
 
-@media (max-width: 737px) {
+@media (max-width: 767px) {
   .info__container {
     max-width: 288px;
     margin: 0 auto;
-    padding: 0 0 370px 38px;
+    padding: 0 0 65px 38px;
   }
 
   .info__title {

@@ -63,7 +63,7 @@
   line-height: 19px;
 
   width: 407px;
-  height: 55px;
+  min-height: 55px;
   padding: 16px 5px 17px;
   margin: 0 0 0 98px;
 
@@ -217,7 +217,7 @@
 
   .promo__link {
     width: 287px;
-    height: 55px;
+    min-height: 55px;
     margin: 0 0 0 3px;
 
     & .promo__link-v1 {

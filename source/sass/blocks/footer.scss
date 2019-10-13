@@ -211,7 +211,7 @@
   }
 }
 
-@media (max-width: 737px) {
+@media (max-width: 767px) {
   .page-footer {
     &__top {
       max-width: 290px;
@@ -242,15 +242,6 @@
 
     &__list {
       display: none;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 100vw;
-
-      border-top: 1px solid rgba(98, 105, 98, 0.2);
     }
   }
 
