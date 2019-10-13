@@ -108,6 +108,8 @@
   margin: 0;
 
   & input + label::before {
+    content: "";
+
     width: 16px;
     height: 16px;
 
@@ -120,6 +122,8 @@
   }
 
   & input:checked + label::after {
+    content: "";
+
     width: 8px;
     height: 5px;
 

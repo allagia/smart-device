@@ -1,12 +1,5 @@
-.page-header {
-  background-color: #1b2d37;
-}
-
 .main-nav {
   display: flex;
-
-  max-width: 1411px;
-  margin: 0 auto;
 
   color: #ffffff;
 }
@@ -74,10 +67,6 @@
 }
 
 @media (max-width: 1023px) {
-  .main-nav {
-    max-width: 720px;
-  }
-
   .main-nav__button {
     display: none;
   }
@@ -110,10 +99,6 @@
 }
 
 @media (max-width: 767px) {
-  .main-nav {
-    max-width: 288px;
-  }
-
   .main-nav__link {
     &--mail::before {
       left: 99px;

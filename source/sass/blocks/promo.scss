@@ -1,10 +1,10 @@
 .promo {
   background-color: $dark-blue;
-  background-image: url("../img/background-desktop@1x.png");
-  background-position: center -85px;
+  background-image: url("../img/background-desktop@1x.png"), url("../img/triangles@1x.png");
+  background-position: center -85px, 1px -22px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/background-desktop@2x.png");
+    background-image: url("../img/background-desktop@2x.png"), url("../img/triangles@2x.png");
   }
   background-repeat: no-repeat;
   color: #ffffff;
@@ -15,7 +15,7 @@
 
   max-width: 1566px;
   margin: 0 auto;
-  padding: 160px 0 117px 73px;
+  padding: 225px 0 117px 73px;
 }
 
 .promo__title {
@@ -98,7 +98,7 @@
 @media (max-width: 1023px) {
   .promo {
     background-image: url("../img/background-tablet@1x.png");
-    background-position: center -72px;
+    background-position: center -9px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/background-tablet@2x.png");
@@ -107,7 +107,7 @@
 
   .promo__container {
     max-width: 770px;
-    padding: 41px 0 56px 89px;
+    padding: 104px 0 162px 89px;
   }
 
   .promo__info {
@@ -165,7 +165,7 @@
 @media (max-width: 767px) {
   .promo {
     background-image: url("../img/background-mobile@1x.png");
-    background-position: center -55px;
+    background-position: center 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/background-mobile@2x.png");
@@ -174,7 +174,7 @@
 
   .promo__container {
     max-width: 291px;
-    padding: 36px 0 71px 0;
+    padding: 91px 0 71px;
 
     flex-direction: column-reverse;
   }

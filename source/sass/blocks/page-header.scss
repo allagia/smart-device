@@ -1,9 +1,21 @@
 .page-header {
-  padding-top: 11px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  width: 1411px;
+  padding: 11px 0 0 0;
+}
+
+@media (max-width: 1023px) {
+  .page-header {
+    width: 720px;
+  }
 }
 
 @media (max-width: 767px) {
   .page-header {
+    width: 288px;
     padding: 0;
   }
 }
