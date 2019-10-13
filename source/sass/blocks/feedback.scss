@@ -57,7 +57,7 @@
   color: #ffffff;
 }
 
-.feedback button {
+.feedback__button {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
@@ -108,8 +108,6 @@
   margin: 0;
 
   & input + label::before {
-    content: "";
-
     width: 16px;
     height: 16px;
 
@@ -122,8 +120,6 @@
   }
 
   & input:checked + label::after {
-    content: "";
-
     width: 8px;
     height: 5px;
 
@@ -139,7 +135,7 @@
 @media (max-width: 1023px) {
   .feedback__container {
     max-width: 591px;
-    padding: 77px 0 12px 0;
+    padding: 77px 0 104px;
   }
 
   .feedback__picture {
@@ -173,14 +169,14 @@
 
   .feedback textarea {
     width: 590px;
-    height: 160px;
+    min-height: 160px;
   }
 
   .feedback__textarea {
     margin: 0 0 38px;
   }
 
-  .feedback button {
+  .feedback__button {
     width: 280px;
     height: 47px;
   }
@@ -191,5 +187,74 @@
 
   .feedback label {
     width: 264px;
+  }
+}
+
+@media (max-width: 737px) {
+  .feedback__container {
+    max-width: 290px;
+    padding: 27px 0 12px;
+  }
+
+  .feedback__title {
+    width: 243px;
+
+    font-size: 28px;
+    line-height: 140.62%;
+  }
+
+  .feedback__text {
+    margin: 14px 0 26px;
+  }
+
+  .feedback input[type="text"] {
+    width: 290px;
+  }
+
+  .feedback textarea {
+    width: 290px;
+    min-height: 104px;
+  }
+
+  .feedback__textarea {
+    margin: 0 0 25px;
+  }
+
+  .feedback__data {
+    flex-wrap: wrap;
+    margin: 0;
+
+    & input {
+      margin: 0 0 30px 0;
+    }
+  }
+
+  .feedback__button {
+    width: 290px;
+  }
+
+  .feedback__push {
+    flex-wrap: wrap;
+  }
+
+  .feedback form {
+    margin: 0;
+  }
+
+  .feedback label {
+    width: 290px;
+    padding: 30px 0 0 34px;
+  }
+
+  .feedback__checkbox {
+    & input + label::before {
+      left: 1px;
+      top: 32px;
+    }
+
+    & input:checked + label::after {
+      left: 5px;
+      top: 37px;
+    }
   }
 }

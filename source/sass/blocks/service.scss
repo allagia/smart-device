@@ -128,13 +128,15 @@
 @media (max-width: 737px) {
   .service__info {
     max-width: 290px;
-    padding: 48px 0 18px 0;
+    padding: 48px 0 19px;
   }
 
   .service__title {
-    width: 280px;
     font-size: 28px;
     line-height: 140.62%;
+
+    width: 280px;
+    margin: 0 0 43px 10px;
   }
 
   .service__item {
