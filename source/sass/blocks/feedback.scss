@@ -43,6 +43,10 @@
 .feedback__button {
   width: 270px;
   height: 45px;
+
+  &:hover {
+    border: 1px solid #ffffff;
+  }
 }
 
 .feedback label {
@@ -83,7 +87,7 @@
 @media (max-width: 1023px) {
   .feedback__container {
     max-width: 591px;
-    padding: 77px 0 104px;
+    padding: 77px 0 81px;
   }
 
   .feedback__picture {

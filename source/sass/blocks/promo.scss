@@ -1,7 +1,7 @@
 .promo {
   background-color: $dark-blue;
   background-image: url("../img/background-desktop@1x.png"), url("../img/triangles@1x.png");
-  background-position: center -85px, 1px -22px;
+  background-position: center -2px, 1px -22px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/background-desktop@2x.png"), url("../img/triangles@2x.png");

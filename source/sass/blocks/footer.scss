@@ -1,3 +1,310 @@
 .page-footer {
-  max-width: 1500px;
+  border-bottom: 1px solid rgba(98, 105, 98, 0.2);
+
+  &__top {
+    display: flex;
+
+    max-width: 1414px;
+    margin: 0 auto;
+    padding: 52px 0 57px 0;
+  }
+
+  &__bottom {
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    max-width: 1414px;
+    min-height: 37px;
+    margin: 0 auto -52px auto;
+
+    & a {
+      color: #1b2d37;
+    }
+  }
+}
+
+.contacts {
+  &__title {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    margin: 13px 0 26px 0;
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+.footer-nav {
+  margin: 0 157px 0 0;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: 498px;
+    height: 100px;
+
+    @include list-reset;
+
+    color: #1b2d37;
+  }
+
+  &__title {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    margin: 13px 0 26px 0;
+  }
+
+  &__link {
+    font-size: 15px;
+    line-height: 25px;
+    color: #1b2d37;
+  }
+}
+
+.page-footer__logo {
+  padding: 14px 0 0 0;
+  margin: 0 206px 0 0;
+}
+
+.social {
+  display: flex;
+
+  margin: 53px 0 0 0;
+
+  &__item {
+    margin: 0 15px 0 0;
+  }
+
+  &__link:hover {
+    opacity: 0.8;
+
+    path {
+      fill: $light-blue;
+    }
+  }
+
+  &__link:active {
+    opacity: 0.3;
+
+    path {
+      fill: $light-blue;
+    }
+  }
+
+  @include list-reset;
+}
+
+.copyright {
+  display: flex;
+
+  &__info {
+    display: block;
+    margin: 0 74px 0 0;
+  }
+
+  &__date {
+    display: block;
+    margin: 0 143px 0 0;
+  }
+
+  &__privacy-terms {
+    display: block;
+    margin: 0 405px 0 0;
+  }
+
+  &__dev {
+    display: block;
+  }
+}
+
+.copyright a,
+.footer-nav a {
+  &:hover {
+    color: $light-blue;
+    opacity: 0.7;
+  }
+
+  &:active {
+    color: $light-blue;
+    opacity: 0.3;
+  }
+}
+
+.page-footer__container {
+  display: flex;
+}
+
+@media (max-width: 1023px) {
+  .page-footer {
+    position: relative;
+
+    &__top {
+      max-width: 720px;
+      padding: 5px 0 42px;
+
+      flex-wrap: wrap;
+    }
+
+    &__bottom {
+      max-width: 720px;
+      margin: 0 auto -59px;
+    }
+  }
+
+  .contacts {
+    &__title {
+      margin: 13px 0 26px 0;
+    }
+  }
+
+  .footer-nav {
+    margin: 0 132px 0 0;
+
+    &__list {
+      width: 243px;
+      height: 175px;
+    }
+  }
+
+  .page-footer__logo {
+    display: flex;
+
+    margin: 0 0 49px 0;
+  }
+
+  .social {
+    margin: 10px 0 0;
+  }
+
+  .copyright {
+    &__info {
+      display: none;
+    }
+
+    &__date {
+      position: absolute;
+      left: 44.5%;
+      top: 35px;
+    }
+
+    &__privacy-terms {
+      margin: 0 312px 0 0;
+    }
+  }
+
+  .logo {
+    margin: 0 443px 0 0;
+  }
+}
+
+@media (max-width: 737px) {
+  .page-footer {
+    &__top {
+      max-width: 290px;
+      padding: 5px 0 41px;
+    }
+
+    &__bottom {
+      max-width: 290px;
+      margin: 0 auto -98px;
+
+      text-align: center;
+    }
+  }
+
+  .contacts {
+    &__title {
+      margin: 13px 0 33px;
+    }
+
+    &__text {
+      width: 272px;
+    }
+  }
+
+  .footer-nav {
+    position: relative;
+    margin: 0 132px 55px 0;
+
+    &__list {
+      display: none;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100vw;
+
+      border-top: 1px solid rgba(98, 105, 98, 0.2);
+    }
+  }
+
+  .social {
+    margin: 10px 0 0 52px;
+  }
+
+  .copyright {
+    display: block;
+
+    &__date {
+      left: 50%;
+      top: 122px;
+
+      width: 250px;
+      margin: 0;
+
+      transform: translate(-50%, 0);
+    }
+
+    &__privacy-terms {
+      margin: 0 0 21px 0;
+    }
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .page-footer__container {
+    display: block;
+  }
+
+  .page-footer__logo {
+    display: block;
+
+    padding: 24px 0 16px 37px;
+
+    & b,
+    & span {
+      display: block;
+    }
+
+    & img {
+      width: 52px;
+      height: 52px;
+    }
+
+    & p {
+      margin: 22px 0 0 0;
+    }
+
+    & a {
+      margin: 0 0 81px 0;
+    }
+  }
 }

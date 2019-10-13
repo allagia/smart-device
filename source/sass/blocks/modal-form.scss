@@ -15,6 +15,16 @@
     width: 490px;
     min-height: 605px;
     padding: 0 0 0 39px;
+
+    z-index: 100;
+  }
+
+  &--close {
+    display: none;
+  }
+
+  &--show {
+    display: block;
   }
 }
 
@@ -39,6 +49,7 @@
 
   background: rgba(250, 250, 250, 0.1);
   border: none;
+  color: #ffffff;
 
   &::placeholder {
     font-family: "PT Mono", "Courier New", monospace;
@@ -60,6 +71,13 @@
   background: rgba(250, 250, 250, 0.1);
   border: none;
   color: #ffffff;
+
+  &::placeholder {
+    font-family: "PT Mono", "Courier New", monospace;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+  }
 }
 
 .modal-form__button {
@@ -113,7 +131,7 @@
     height: 5px;
 
     position: absolute;
-    left: 5px;
+    left: 4px;
     top: 15px;
 
     background-image: url("../img/tick.svg");
