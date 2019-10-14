@@ -4,7 +4,7 @@
   var ENTER_KEYCODE = 13;
 
   var button = document.querySelector('.main-nav__button');
-  var popup = document.querySelector('.popup');
+  var popup = document.querySelector('.popup__container');
   var closePopup = popup.querySelector('.popup__close');
   var form = popup.querySelector('form');
   var name = form.querySelector('#id-name');
@@ -26,7 +26,6 @@
       popup.classList.remove('popup--show');
     }
   });
-
 
   window.addEventListener('keydown', function (evt) {
     if (evt.keyCode === ESC_KEYCODE) {
