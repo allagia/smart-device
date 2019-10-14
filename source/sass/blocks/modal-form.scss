@@ -1,30 +1,41 @@
 .modal-form {
   background-color: $light-blue;
   color: #ffffff;
+}
 
-  &--popup {
-    display: none; /*временно*/
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    /*для тестирования в пиксель перфект*/
-    // transform: translate(-50%,117px);
-    // top:0;
+.popup {
+  display: none; /*временно*/
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /*для тестирования в пиксель перфект*/
+  // transform: translate(-50%,117px);
+  // top:0;
 
-    width: 490px;
-    min-height: 605px;
-    padding: 0 0 0 39px;
+  width: 490px;
+  min-height: 605px;
+  padding: 0 0 0 39px;
 
-    z-index: 100;
-  }
-
-  &--close {
-    display: none;
-  }
+  z-index: 100;
 
   &--show {
     display: block;
+  }
+
+  &__close {
+    position: absolute;
+
+    right: 20px;
+    top: 20px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -71,6 +82,7 @@
   background: rgba(250, 250, 250, 0.1);
   border: none;
   color: #ffffff;
+  resize: none;
 
   &::placeholder {
     font-family: "PT Mono", "Courier New", monospace;
@@ -84,6 +96,10 @@
   width: 411px;
   min-height: 47px;
   margin: 0 0 25px 0;
+
+  &:hover {
+    border: 1px solid #ffffff;
+  }
 }
 
 .modal-form label {
