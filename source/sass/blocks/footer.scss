@@ -23,9 +23,17 @@
       color: #1b2d37;
     }
   }
+
+  &__logo {
+    max-width: 218px;
+    padding: 14px 0 0 0;
+    margin: 0 206px 0 0;
+  }
 }
 
 .contacts {
+  max-width: 333px;
+
   &__title {
     font-family: "Roboto Condensed", "Arial", sans-serif;
     font-size: 15px;
@@ -43,6 +51,7 @@
 }
 
 .footer-nav {
+  max-width: 514px;
   margin: 0 157px 0 0;
 
   &__list {
@@ -75,13 +84,9 @@
   }
 }
 
-.page-footer__logo {
-  padding: 14px 0 0 0;
-  margin: 0 206px 0 0;
-}
-
 .social {
   display: flex;
+  flex-wrap: wrap;
 
   margin: 53px 0 0 0;
 
@@ -172,6 +177,7 @@
   }
 
   .footer-nav {
+    max-width: 243px;
     margin: 0 132px 0 0;
 
     &__list {
@@ -187,6 +193,7 @@
   }
 
   .social {
+    min-width: 126px;
     margin: 10px 0 0;
   }
 
@@ -246,6 +253,7 @@
   }
 
   .social {
+    max-width: 290px;
     margin: 10px 0 0 52px;
   }
 

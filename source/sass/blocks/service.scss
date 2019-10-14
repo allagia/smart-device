@@ -6,13 +6,14 @@
 }
 
 .service__info {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
-  padding: 51px 0 81px 13px;
+  padding: 51px 0 81px 66px;
 }
 
 .service__list {
   display: flex;
+  flex-wrap: wrap;
 
   @include list-reset;
 }
@@ -69,12 +70,6 @@
 .service__text {
   font-size: 20px;
   line-height: 30px;
-}
-
-@media (max-width: 1200px) {
-  .service__list {
-    flex-wrap: wrap;
-  }
 }
 
 @media (max-width: 1023px) {
