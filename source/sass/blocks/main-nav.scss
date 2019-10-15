@@ -36,7 +36,7 @@
     left: -39px;
     top: 3px;
 
-    background-image: url("../img/mail-icon.svg");
+    background-image: url("../img/icon-mail.svg");
     background-repeat: no-repeat;
   }
 
@@ -49,7 +49,7 @@
     left: -33px;
     top: 1px;
 
-    background-image: url("../img/phone-icon.svg");
+    background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
   }
 
@@ -89,7 +89,7 @@
       width: 25px;
       height: 19px;
 
-      background-image: url("../img/mail-tablet.svg");
+      background-image: url("../img/icon-mail-tablet.svg");
     }
 
     &--phone::before {
@@ -99,7 +99,7 @@
       width: 24px;
       height: 24px;
 
-      background-image: url("../img/phone-tablet.svg");
+      background-image: url("../img/icon-phone-tablet.svg");
     }
   }
 }

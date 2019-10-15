@@ -36,11 +36,16 @@
   display: flex;
 }
 
-.feedback input[type="text"] {
+.feedback input[type="text"],
+.feedback input[type="tel"] {
   width: 270px;
   height: 50px;
   padding: 0 0 0 17px;
-  margin-bottom: 0;
+  margin: 0 30px 30px 0;
+
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
 }
 
 .feedback textarea {
@@ -69,8 +74,8 @@
 
 .feedback__data {
   display: flex;
-  justify-content: space-between;
-  margin: 0 0 40px 0;
+  flex-wrap: wrap;
+  margin: 0 0 10px;
 }
 
 .feedback__textarea {
@@ -87,6 +92,10 @@
     left: 42px;
     top: 14px;
   }
+}
+
+.feedback form {
+  max-width: 570px;
 }
 
 @media (max-width: 1023px) {
@@ -121,10 +130,11 @@
   }
 
   .feedback__data {
-    margin: 0 0 42px;
+    margin: 0 0 12px;
   }
 
-  .feedback input[type="text"] {
+  .feedback input[type="text"],
+  .feedback input[type="tel"] {
     width: 280px;
     height: 52px;
   }
@@ -144,6 +154,7 @@
   }
 
   .feedback form {
+    max-width: 590px;
     margin: 0 0 0 5px;
   }
 
@@ -169,7 +180,8 @@
     margin: 14px 0 26px;
   }
 
-  .feedback input[type="text"] {
+  .feedback input[type="text"],
+  .feedback input[type="tel"] {
     width: 290px;
     margin: 0 0 30px 0;
   }
@@ -202,6 +214,7 @@
   }
 
   .feedback form {
+    max-width: 290px;
     margin: 0;
   }
 
