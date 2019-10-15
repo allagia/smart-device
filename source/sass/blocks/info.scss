@@ -42,7 +42,7 @@
 }
 
 .info__description {
-  width: 980px;
+  width: 79%;
   margin: 29px 0 0 -14px;
 }
 
@@ -58,13 +58,12 @@
 @media (max-width: 1023px) {
   .info__container {
     max-width: 874px;
-    padding: 0 0 70px 52px;
+    padding: 0 5px 70px 5px;
     margin: -6px auto 0 auto;
   }
 
   .info__description {
-    width: 532px;
-    // height: 201px;
+    width: 73%;
     margin: -2px 0 0 -38px;
   }
 
@@ -96,9 +95,13 @@
 
 @media (max-width: 767px) {
   .info__container {
-    max-width: 288px;
+    // max-width: 288px;
     margin: 0 auto;
-    padding: 0 0 65px 38px;
+    padding: 0 0 65px 53px;
+  }
+
+  .info__description {
+    width: 100vw;
   }
 
   .info__title {

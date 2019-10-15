@@ -1,21 +1,24 @@
 .promo {
   background-color: $dark-blue;
-  background-image: url("../img/background-desktop@1x.png"), url("../img/triangles@1x.png");
-  background-position: center -2px, 1px -22px;
+  background-image: url("../img/background-desktop@1x.png"), url("../img/triangles-desktop@1x.png");
+  background-position: center -2px, center -22px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/background-desktop@2x.png"), url("../img/triangles@2x.png");
+    background-image: url("../img/background-desktop@2x.png"), url("../img/triangles-desktop@2x.png");
   }
   background-repeat: no-repeat;
   color: #ffffff;
+  overflow-x: hidden;
 }
 
 .promo__container {
+  position: relative;
+
   display: flex;
 
   max-width: 1566px;
   margin: 0 auto;
-  padding: 225px 0 117px 73px;
+  padding: 225px 40px 277px;
 }
 
 .promo__title {
@@ -85,34 +88,39 @@
 }
 
 .promo__info {
-  width: 718px;
-  margin-right: 71px;
+  // max-width: 52%;
+  width: 75vw;
+  max-width: 752px;
+  padding: 0 0 0 33px;
+
+  z-index: 1;
 }
 
 .promo__picture {
+  position: absolute;
+  right: 0;
+  top: 236px;
   width: 705px;
   height: 515px;
-  padding: 11px 0 0 0;
 }
 
 @media (max-width: 1023px) {
   .promo {
-    background-image: url("../img/background-tablet@1x.png");
-    background-position: center -9px;
+    background-image: url("../img/background-desktop@1x.png"), url("../img/triangles-tablet@1x.png");
+    background-position: center -9px, right -9px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/background-tablet@2x.png");
+      background-image: url("../img/background-desktop@2x.png"), url("../img/triangles-tablet@2x.png");
     }
   }
 
   .promo__container {
-    max-width: 770px;
-    padding: 104px 0 162px 89px;
+    padding: 104px 40px 162px;
   }
 
   .promo__info {
-    width: 421px;
-    padding: 0;
+    max-width: 75%;
+    padding: 0 0 0 49px;
     margin: 0;
   }
 
@@ -156,25 +164,27 @@
   }
 
   .promo__picture {
+    right: -205px;
+    top: 104px;
+
     width: 465px;
     height: 340px;
-    padding: 0;
   }
 }
 
 @media (max-width: 767px) {
   .promo {
-    background-image: url("../img/background-mobile@1x.png");
-    background-position: center 0;
+    background-image: url("../img/background-tablet@1x.png"), url("../img/triangles-mobile@1x.png");
+    background-position: center 0, right 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/background-mobile@2x.png");
+      background-image: url("../img/background-tablet@2x.png"), url("../img/triangles-mobile@2x.png");
     }
   }
 
   .promo__container {
-    max-width: 291px;
-    padding: 91px 0 71px;
+    // max-width: 291px;
+    padding: 285px 14px 71px;
 
     flex-direction: column-reverse;
   }
@@ -187,7 +197,9 @@
   .promo__picture {
     width: 301px;
     height: 220px;
-    margin: 0 0 -26px 5px;
+
+    right: -4px;
+    top: 92px;
   }
 
   .promo__title {
@@ -197,16 +209,14 @@
   }
 
   .promo__info {
-    max-width: 287px;
-
-    z-index: 1;
+    min-width: 100%;
+    padding: 0;
   }
 
   .promo__text {
     font-size: 16px;
     line-height: 156.8%;
 
-    width: 245px;
     margin: 28px 0 41px 50px;
 
     &::before {

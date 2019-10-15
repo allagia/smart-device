@@ -1,12 +1,12 @@
 .feedback {
   background-color: $light-blue;
-  background-image: url("../img/triangles@1x.png");
+  background-image: url("../img/triangles-desktop@1x.png");
   background-repeat: no-repeat;
   background-position: -854px -178px;
   color: #ffffff;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/triangles@2x.png");
+    background-image: url("../img/triangles-desktop@2x.png");
   }
 }
 
