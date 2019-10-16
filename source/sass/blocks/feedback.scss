@@ -165,12 +165,12 @@
 
 @media (max-width: 767px) {
   .feedback__container {
-    max-width: 290px;
-    padding: 27px 0 43px;
+    max-width: 90%;
+    padding: 28px 0 43px;
   }
 
   .feedback__title {
-    width: 243px;
+    width: 100%;
 
     font-size: 28px;
     line-height: 140.62%;
@@ -182,12 +182,12 @@
 
   .feedback input[type="text"],
   .feedback input[type="tel"] {
-    width: 290px;
+    width: 100%;
     margin: 0 0 30px 0;
   }
 
   .feedback textarea {
-    width: 290px;
+    width: 100%;
     min-height: 104px;
   }
 
@@ -205,7 +205,7 @@
   }
 
   .feedback__button {
-    width: 290px;
+    width: 100%;
     margin: 0;
   }
 
@@ -214,12 +214,11 @@
   }
 
   .feedback form {
-    max-width: 290px;
     margin: 0;
   }
 
   .feedback label {
-    width: 290px;
+    width: 100%;
     padding: 30px 0 0 34px;
   }
 

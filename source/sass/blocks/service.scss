@@ -8,15 +8,19 @@
 .service__info {
   max-width: 1335px;
   margin: 0 auto;
-  padding: 51px 50px 81px 50px;
+  padding: 51px 50px 104px;
 }
 
 .service__list {
   @include list-reset;
   display: flex;
-  flex-wrap: wrap;
 
   padding: 0 0 0 32px;
+}
+
+.service__item {
+  width: 31%;
+  margin-right: 30px;
 }
 
 .service__link {
@@ -27,9 +31,9 @@
   font-size: 20px;
   line-height: 30px;
 
-  width: 370px;
-  height: 620px;
-  margin: 0 30px 30px 0;
+  // width: 370px;
+  width: 100%;
+  // height: 620px;
   padding: 49px 0 0 0;
 
   color: #ffffff;
@@ -43,8 +47,8 @@
 
     background-image: url("../img/icon-rectangle.svg");
     background-repeat: no-repeat;
-    right: 0;
-    bottom: 0;
+    right: 1px;
+    bottom: 7px;
   }
 
   &::after {
@@ -56,8 +60,8 @@
 
     background-image: url("../img/icon-vector.svg");
     background-repeat: no-repeat;
-    bottom: 26px;
-    right: 25px;
+    bottom: 33px;
+    right: 27px;
   }
 
   &:hover {
@@ -69,7 +73,7 @@
   }
 
   & img {
-    margin: -49px 0 0 0;
+    margin: -47px 0 0;
   }
 
   & span {
@@ -95,11 +99,13 @@
 @media (max-width: 1023px) {
   .service__info {
     max-width: 720px;
+    width: 95%;
     padding: 50px 0 16px 0;
   }
 
   .service__title {
-    width: 613px;
+    max-width: 613px;
+    width: 100%;
     margin: 0 0 50px 0;
 
     font-size: 32px;
@@ -108,11 +114,12 @@
 
   .service__list {
     flex-direction: column;
+
     padding: 0;
   }
 
   .service__link {
-    width: 720px;
+    max-width: 720px;
     height: 256px;
     padding: 39px 0 0;
 
@@ -127,16 +134,27 @@
         margin: -50px 0 0;
       }
     }
+
+    &::before {
+      right: 1px;
+      bottom: 0;
+    }
+
+    &::after {
+      bottom: 27px;
+      right: 26px;
+    }
   }
 
   .service__item {
-    margin-bottom: 16px;
+    width: 100%;
+    margin-bottom: 46px;
   }
 }
 
 @media (max-width: 767px) {
   .service__info {
-    max-width: 290px;
+    width: 91%;
     padding: 48px 0 19px;
   }
 
@@ -144,18 +162,23 @@
     font-size: 28px;
     line-height: 140.62%;
 
-    width: 280px;
+    // width: 280px;
     margin: 0 0 43px 10px;
   }
 
   .service__item {
-    width: 290px;
+    // width: 290px;
     height: 256px;
     margin-bottom: 30px;
+
+    & img {
+      width: 100%;
+      max-height: 256px;
+    }
   }
 
   .service__link {
-    width: 290px;
+    // width: 290px;
     height: 256px;
     padding: 19px 0 0;
 
@@ -173,6 +196,11 @@
       & img {
         margin: -29px 0 0;
       }
+    }
+
+    &::after {
+      bottom: 26px;
+      right: 28px;
     }
   }
 }

@@ -7,13 +7,14 @@
 
   max-width: 1300px;
   margin: 0 auto;
-  padding: 12px 0 0 55px;
+  padding: 8px 0 1px 54px;
 }
 
 .info__title {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 36px;
   line-height: 51px;
+  font-weight: normal;
 
   margin-bottom: 23px;
 }
@@ -58,7 +59,7 @@
 @media (max-width: 1023px) {
   .info__container {
     max-width: 874px;
-    padding: 0 5px 70px 5px;
+    padding: 7px 0 69px;
     margin: -6px auto 0 auto;
   }
 

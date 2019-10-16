@@ -3,7 +3,7 @@
   color: #ffffff;
 }
 
-.popup__container {
+.popup {
   display: none; /*временно*/
   position: fixed;
 
@@ -15,19 +15,10 @@
   height: 100%;
   padding: 54px 0 0 0;
 
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 100;
-}
 
-.popup {
-  position: relative;
-
-  width: 490px;
-  min-height: 605px;
-  padding: 1px 0 0 39px;
-  margin: 0 auto;
-
-  &--show {
+  &__show {
     display: block;
   }
 
@@ -45,6 +36,15 @@
       opacity: 0.3;
     }
   }
+}
+
+.popup__form {
+  position: relative;
+
+  width: 490px;
+  min-height: 605px;
+  padding: 1px 0 0 39px;
+  margin: 0 auto;
 }
 
 .modal-form__title {
@@ -161,5 +161,14 @@
 
     background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
+  }
+
+  & label:hover {
+    opacity: 0.6;
+  }
+
+  & label:active {
+    opacity: 0.3;
+    outline: none;
   }
 }
