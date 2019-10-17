@@ -4,7 +4,7 @@
 }
 
 .popup {
-  display: none; /*временно*/
+  display: none;
   position: fixed;
 
   left: 50%;
@@ -13,7 +13,7 @@
 
   width: 100%;
   height: 100%;
-  padding: 54px 0 0 0;
+  padding: 136px 0 0;
 
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 100;
@@ -122,6 +122,8 @@
   width: 400px;
   padding: 8px 0 0 49px;
   opacity: 0.8;
+
+  cursor: pointer;
 }
 
 .modal-form__data {
