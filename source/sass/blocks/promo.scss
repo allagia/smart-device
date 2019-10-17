@@ -104,6 +104,10 @@
   height: 515px;
 }
 
+.promo__scroll {
+  position: absolute;
+}
+
 @media (max-width: 1023px) {
   .promo {
     background-image: url("../img/background-desktop@1x.png"), url("../img/triangles-tablet@1x.png");
