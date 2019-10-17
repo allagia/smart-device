@@ -8,6 +8,7 @@
     background-size: contain;
   }
   background-repeat: no-repeat;
+  background-size: cover;
   color: #ffffff;
   overflow-x: hidden;
 }
@@ -127,6 +128,7 @@
   .promo {
     background-image: url("../img/background-desktop@1x.png"), url("../img/triangles-tablet@1x.png");
     background-position: center -9px, right 0;
+    background-size: auto, contain;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/background-desktop@2x.png"), url("../img/triangles-tablet@2x.png");
