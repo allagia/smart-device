@@ -119,6 +119,14 @@
   color: #ffffff;
   opacity: 0.5;
 
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &:target ~ .advantages {
     transform: translateY(0);
   }
@@ -209,7 +217,6 @@
   }
 
   .promo__container {
-    // max-width: 291px;
     padding: 285px 14px 71px;
 
     flex-direction: column-reverse;

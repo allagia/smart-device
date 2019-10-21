@@ -9,7 +9,7 @@ html {
   box-sizing: inherit;
 }
 
-body {
+.general-body {
   margin: 0;
   padding: 0;
 
@@ -17,6 +17,11 @@ body {
   line-height: 22px;
   font-family: "PT Mono", "Courier New", monospace;
   color: #000000;
+}
+
+.general-body--under-popup {
+  height: 100vw;
+  overflow: hidden;
 }
 
 a {
